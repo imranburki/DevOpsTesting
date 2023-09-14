@@ -1,0 +1,14 @@
+name: "Github actions for testing DevOps"
+on: push
+jobs:
+    Github-Actions:
+      runs-on: ubuntu-latest
+    
+      steps:
+        # step 1. checkout repository 
+        - name: repo checkout
+          uses: actions/checkout@v3
+        - name: print msg whether successful or not
+          run: echo Done successfuly....
+      
+  
